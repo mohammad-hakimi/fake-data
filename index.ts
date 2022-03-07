@@ -63,9 +63,7 @@ function dfs(item: any, level: number, index: number) {
         return
     }
     for (let i = 0; i < Object.keys(item).length; i++) {
-        if (item[Object.keys(item)[i]] === '3') {
-            return
-        }
+
         dfs(item[Object.keys(item)[i]], level + 1, index)
     }
 }
